@@ -38,7 +38,7 @@ function AppContact() {
                 <Col span={12}>
                   <Form.Item
                     name="fullname"
-                    rules={[{ required: true, message: 'Please enter your full name!' },{pattern:'string',message:'Please enter only string characters!'}]}
+                    rules={[{ required: true, message: 'Please enter your full name!' }]}
                   >
                     <Input placeholder="Full Name" />
                   </Form.Item>
@@ -65,19 +65,13 @@ function AppContact() {
                 <Col span={12}>
                   <Form.Item name="telephone"
                   rules={[
+                    
                     {
-                      
-                        type: 'string',
-                        pattern: /^0\d{10}$/,
-                        message: 'Telephone number must start with 0' ,
-                      
-                     
-                    },
-                    {
-                      pattern: /^[0-9]*$/,
-                      message: 'Please enter only numeric characters!',
-                    },
                   
+                      pattern: /^0\d{10}$/,
+                      message: 'Telephone number must start with 0 and have 11 characters!',
+                    },
+                    
                   ]}
                   
                   >
