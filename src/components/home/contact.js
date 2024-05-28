@@ -9,7 +9,7 @@ function AppContact() {
       theme={{
         token: {
           colorPrimary: '#d11ba7',
-          colorPrimaryHover: '#d11ba7', // Örnek bir renk tokenı
+          colorPrimaryHover: '#5b10b5', // Örnek bir renk tokenı
         },
 
       }}
