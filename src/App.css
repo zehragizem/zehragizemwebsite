@@ -1,0 +1,436 @@
+/* 
+general 
+-------
+*/
+
+
+body {
+  background-image: url('assets/images/5238994.png');
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.ant-layout {
+  background: #fff !important;
+}
+
+.mainLayout .ant-layout-header {
+  margin-top: 0;
+  background-image: url('assets/images/5238994.png');
+  background-position: top center;
+  background-size: cover;
+  line-height: 1.6;
+}
+
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+.bgGray {
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  height: 100vh;
+}
+
+
+
+.container-skills {
+  background-color: #1e0749;
+  display: flex;
+  border-radius: 15%;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 1150px;
+  padding: 150px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cardfeature {
+  transition: box-shadow 0.3s ease; /* Gölge efekti için geçiş efekti ekleme */
+}
+
+.cardfeature:hover {
+  box-shadow: 7px 7px 7px 7px rgba(130, 5, 130, 0.726); /* Kartın üzerine gelindiğinde gölge efekti uygulama */
+}
+.container-skills h1 {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  font-size: 45px;
+
+}
+
+
+
+
+
+
+
+
+/* 
+title holder
+------------
+*/
+.titleHolder {
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 0 0 20px;
+  margin: 0 0 40px;
+}
+
+.titleHolder:after {
+  transform: translateX(-50%);
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 80px;
+}
+
+.titleHolder h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+/* 
+header
+------ 
+*/
+.ant-layout-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 850px;
+}
+
+
+.header .ant-anchor-wrapper {
+  background: none;
+  display: flex;
+  justify-content: flex-end; /* Sağa hizala */
+  overflow-x: auto; /* Yatay kaydırma çubuğunu etkinleştir */
+}
+
+.header .ant-anchor {
+  display: flex;
+}
+
+.header .ant-anchor-link {
+  padding: 0 20px;
+  line-height: 1.2;
+  position: relative;
+}
+
+
+
+
+
+
+
+/* 
+hero
+---- 
+*/
+.heroBlock {
+  background: url('assets/images/ark3.jpg') no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  height: 100vh;
+}
+
+.heroBlock .container-fluid {
+
+  display: block !important;
+}
+
+.heroBlock .ant-carousel,
+.heroBlock .ant-carousel div {
+  height: 100%;
+}
+
+.heroBlock .slick-dots li button {
+  background:white !important;
+}
+
+.heroBlock .slick-dots li.slick-active button {
+  background: #d11ba7 !important;
+}
+
+.heroBlock .content {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 70px;
+  text-align: left;
+}
+
+.heroBlock h3 {
+  color: white;
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0 0 30px;
+}
+
+.heroBlock p {
+  color:white;
+  margin: 0 0 30px;
+}
+
+.heroBlock .btnHolder {
+  height: auto !important;
+}
+
+.heroBlock .btnHolder button,
+.heroBlock .btnHolder .fas {
+  margin: 0 10px 0 10px;
+}
+
+/* 
+block
+----- 
+*/
+.block {
+  padding: 60px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+/* 
+about
+----- 
+*/
+.aboutBlock .contentHolder {
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.aboutBlock .icon {
+  font-size: 40px;
+  color: #630c72;
+  margin: 0 0 10px;
+}
+
+.aboutBlock .content {
+  text-align: center;
+}
+
+
+
+
+/* 
+footer
+------
+*/
+.ant-layout-footer {
+  background: #111 !important;
+  color: #fff !important;
+  padding: 30px 0px !important;
+  text-align: center;
+}
+
+.footer .logo {
+  color: #aa16ad;
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+
+.footer .fas {
+  color: #680d86;
+  font-size: 28px;
+  margin: 0 5px 0 0;
+}
+
+.footer .logo a {
+  color: #fff;
+}
+
+.footer .socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 24px;
+}
+
+.footer .socials li {
+  margin: 0 20px;
+}
+
+.footer .socials a {
+  color: #fff;
+}
+
+.footer .socials a:hover {
+  color: #d11ba7;
+}
+
+.footer .goTop:hover {
+  opacity: 0.7;
+}
+
+.mobileVisible {
+  display: none;
+}
+
+.mobileHidden {
+  display: block;
+}
+
+/* 
+responsive
+----------
+*/
+@media only screen and (max-width: 991px) {
+  .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
+    transform: scale(1.14);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
+    transform: scale(1);
+  }
+
+  .mobileVisible {
+    display: block;
+  }
+  
+  .mobileHidden {
+    display: none;
+  }
+}
+.ant-back-top-inner {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: transparent;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid #cecece; /* Kenarlık rengi ve kalınlığı */
+}
+
+.ant-back-top {
+  position: fixed;
+  bottom: 50px; /* veya istediğiniz bir değer */
+  right: 50px; /* veya istediğiniz bir değer */
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.ant-back-top.hide {
+  opacity: 0;
+}
+
+.contact {
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  padding: 60px 0 200px 0;
+}
+.contact img {
+  width: 92%;
+}
+.contact h2 {
+	font-size: 45px;
+	font-weight: 700;
+  margin-bottom: 30px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.contact-form input:focus::placeholder, .contact-form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+
+
+
+.contentHolder {
+  background: none; /* İçeriğin arka planını temizle */
+  background-size: cover;
+  justify-content: space-between;
+  display: flex;
+
+
+}
+
+.left {
+  margin-top: 7%;
+  width: 45%; /* Sol bölümün genişliği */
+  margin-right: 5%; /* Sağdaki form ile resim arasında boşluk */
+}
+
+.right {
+  margin-top: 7%;
+  width: 50%; /* Sağ bölümün genişliği */
+  padding: 5px;
+}
+
+.right .titleHolder {
+  margin-bottom: 10px;
+}
+
+.right .contact-form {
+  width: 100%;
+}
+
+img {
+  background: none; /* Resmin arka planını temizle */
+  width: 100%; /* Resmi tam genişlikte yap */
+  height: auto;
+  margin-left: 5px; /* Resmi sola yaklaştırma */
+}
+
+
+.backdrop-backdrop-filter {
+  backdrop-filter: blur(8px); /* Arka planı blurla */
+}

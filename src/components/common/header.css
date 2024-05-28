@@ -1,0 +1,24 @@
+.icon-container {
+  display: flex;
+  margin-top: -3%;
+  justify-content: flex-end; /* Bağlantıları yatayda en sağa hizala */
+}
+
+.icon-container a {
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Bağlantı alanının boyutu */
+  height: 40px; /* Bağlantı alanının boyutu */
+  margin-left: 13px; /* Sağa boşluk bırak */
+  border: 1.5px solid rgb(153, 153, 153); 
+}
+
+.icon-container a.linkedin:hover {
+  background-color: #0077B5; /* LinkedIn için hover durumunda arka plan rengi */
+}
+
+.icon-container a.github:hover {
+  background-color: #b010d0; /* GitHub için hover durumunda arka plan rengi */
+}
