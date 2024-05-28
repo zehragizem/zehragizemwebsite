@@ -10,10 +10,6 @@ function AppContact() {
         token: {
           colorPrimary: '#d11ba7',
           colorPrimaryHover: '#d11ba7', // Örnek bir renk tokenı
-
-
-          // Diğer global tokenlar buraya eklenebilir
-
         },
 
       }}
@@ -64,16 +60,16 @@ function AppContact() {
               <Row gutter={[16, 16]}>
                 <Col span={12}>
                   <Form.Item name="telephone"
-                  rules={[
-                    
-                    {
-                  
-                      pattern: /^0\d{10}$/,
-                      message: 'Telephone number must start with 0 and have 11 characters!',
-                    },
-                    
-                  ]}
-                  
+                    rules={[
+
+                      {
+
+                        pattern: /^0\d{10}$/,
+                        message: 'Telephone number must start with 0 and have 11 characters!',
+                      },
+
+                    ]}
+
                   >
                     <Input placeholder="Telephone" />
                   </Form.Item>
@@ -106,7 +102,7 @@ function AppContact() {
                 </Form.Item>
               </Form.Item>
               <Form.Item>
-                <Button type='default' htmlType="submit" className="login-form-button" >
+                <Button type='primary' htmlType="submit" className="login-form-button" >
                   Submit
                 </Button>
               </Form.Item>
