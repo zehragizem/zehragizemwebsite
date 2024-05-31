@@ -1,22 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
 import { Form, Input, Button, Checkbox, Row, Col, ConfigProvider, Modal } from 'antd';
 import Message from "../../assets/images/contact-img.svg";
 const { TextArea } = Input;
 
 function AppContact() {
   const [isModalVisible, setModalVisible] = useState(false);
+  const formRef = useRef(null);
 
   const openModal = () => {
     setModalVisible(true);
+    formRef.current.resetFields();
   }
   const closeModal = () => {
     setModalVisible(false);
   };
 
-  /*const onFinish = (values) => {
+  const onFinish = (values) => {
     console.log('Received values:', values);
     openModal(); // Form gönderildiğinde modalı aç
-  };*/
+  };
 
   return (
     <ConfigProvider
@@ -45,7 +47,8 @@ function AppContact() {
               name="contact_form"
               className="contact-form"
               initialValues={{ remember: false }}
-              //onFinish={onFinish} // Form gönderildiğinde onFinish çağrılır
+              onFinish={onFinish} // Form gönderildiğinde onFinish çağrılır
+              ref={formRef}
             >
               <Row gutter={[16, 16]}>
                 <Col span={12}>
@@ -114,7 +117,7 @@ function AppContact() {
                 </Form.Item>
               </Form.Item>
               <Form.Item>
-                <Button type='primary' htmlType="submit" onClick={openModal}>
+                <Button type='primary' htmlType="submit">
                   Submit
                 </Button>
               </Form.Item>
