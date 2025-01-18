@@ -32,7 +32,7 @@ const AppHero = (props) => {
                 <p>{item.content}</p>
                 <div className="btnHolder">
                   <Button type="primary" size="large" href={item.link} target="_blank" rel="noopener noreferrer" style={{ backgroundColor: "#d11ba7" }}>Github Repository</Button>
-                  {index !== 3 && (
+                  {index !== 4 && (
                     <Button size="large" onClick={() => showModal(item.video)} className="watch-demo-button">
                       <i className="fas fa-desktop"></i> Watch a Demo
                     </Button>

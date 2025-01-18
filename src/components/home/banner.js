@@ -57,7 +57,7 @@ export const Banner = () => {
                             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                 <span className="tagline">Welcome to my Portfolio</span>
                                 <h1>{`Hi! I'm Gizem`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                                <p>I am currently a 3rd-year Computer Engineering student at Trakya University. Throughout my academic journey, I have sharpened my problem-solving and analytical skills while maintaining an open attitude towards learning. I am dedicated to staying updated with industry innovations. As an energetic and ambitious aspiring computer engineer, I am eager to gain practical experience in the software industry.</p>
+                                <p>I am currently a 4th-year Computer Engineering student at Trakya University. Throughout my academic journey, I have sharpened my problem-solving and analytical skills while maintaining an open attitude towards learning. I am dedicated to staying updated with industry innovations. Alongside my studies, I work part-time, which has allowed me to gain valuable hands-on experience and apply my knowledge in real-world scenarios. As an energetic and ambitious aspiring computer engineer, I am eager to further expand my practical experience in the software industry.</p>
                             
                             </div>}
                     </TrackVisibility>
